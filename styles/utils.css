@@ -1,3 +1,23 @@
+/* small viewport
+@media (min-width: 640px) {}
+
+medium viewport
+@media (min-width: 768px) {}
+
+large viewport
+@media (min-width: 1024px) {}
+
+extra large viewport
+@media (min-width: 1280px) {}
+
+2 extra large viewport 
+@media (min-width: 1536px) {} */
+
+
+
+
+
+
 .btn {
     display: inline-block;
     font-weight: 600;
@@ -22,7 +42,10 @@
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: 1px solid red;
+}
+
+.section {
+    margin-top: 5rem;
 }
 
 /* extra small viewport */
@@ -50,6 +73,10 @@
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
+    }
+
+    .section {
+        margin-top: 10rem;
     }
 }
 
