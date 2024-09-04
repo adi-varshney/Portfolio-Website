@@ -17,6 +17,9 @@
     display: block;
 }
 
+/* extra small viewport */
+/* @media (min-width: 475px) {} */
+
 /* small viewport */
 /* @media (min-width: 640px) {} */
 

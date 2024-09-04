@@ -39,9 +39,8 @@
     font-size: var(--size-sm);
 }
 
-
-/* small viewport */
-@media (min-width: 640px) {
+/* extra small viewport */
+@media (min-width: 475px) {
     .hero {
         gap: 1.5rem;
     }
@@ -67,6 +66,9 @@
         font-size: var(--size-base);
     }
 }
+
+/* small viewport */
+/* @media (min-width: 640px) {} */
 
 /* medium viewport */
 /* @media (min-width: 768px) {} */
