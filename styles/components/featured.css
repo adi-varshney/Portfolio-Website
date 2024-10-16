@@ -55,6 +55,11 @@
     font-size: var(--size-sm);
     color: var(--clr-slate600);
     text-transform: capitalize;
+    display: block;
+}
+.featured__arrow {
+    width: var(--size-base);
+    height: var(--size-base);
 }
 
 /* extra small viewport */
