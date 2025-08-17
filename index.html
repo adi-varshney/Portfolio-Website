@@ -1,352 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adi Varshney's Portfolio</title>
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./styles/modern-normalize.css" rel="stylesheet">
-    <link href="./styles/style.css" rel="stylesheet">
-    <link href="./styles/components/about.css" rel="stylesheet">
-    <link href="./styles/components/contact.css" rel="stylesheet">
-    <link href="./styles/components/featured.css" rel="stylesheet">
-    <link href="./styles/components/footer.css" rel="stylesheet">
-    <link href="./styles/components/header.css" rel="stylesheet">
-    <link href="./styles/components/hero.css" rel="stylesheet">
-    <link href="./styles/components/mobile-nav.css" rel="stylesheet">
-    <link href="./styles/components/work.css" rel="stylesheet">
-    <link href="./styles/utils.css" rel="stylesheet">
-  </head>
 
-  <body>
-    <header class="header container">
-      <nav>
-        <ul class="header__menu">
-          <li>
-            <a class="header__link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="header__link" href="#featured">Work</a>
-          </li>
-          <li>
-            <a class="header__link" href="#contact">Contact</a>
-          </li>
-          <li class="header__line"></li>
-          <li>
-            <button id="theme-toggle" class="header__sun">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
-                />
-              </svg>
-            </button>
-          </li>
-          <li>
-            <a class="header__resume btn" href="#">Resume</a>
-            <!-- add link to resume in href!!! -->
-          </li>
-        </ul>
-        <button class="header__bars">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-      </nav>
-    </header>
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-      <nav>
-        <ul class="mobile-nav__menu">
-          <li>
-            <a class="mobile-nav__link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#featured">Work</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#contact">Contact</a>
-          </li>
-          <li class="mobile-nav__link-line"></li>
-          <li>
-            <button id="theme-toggle" class="mobile-nav__sun">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
-              />
-            </svg>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adi Varshney's Portfolio</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+  <link href="./styles/modern-normalize.css" rel="stylesheet">
+  <link href="./styles/style.css" rel="stylesheet">
+  <link href="./styles/components/about.css" rel="stylesheet">
+  <link href="./styles/components/contact.css" rel="stylesheet">
+  <link href="./styles/components/featured.css" rel="stylesheet">
+  <link href="./styles/components/footer.css" rel="stylesheet">
+  <link href="./styles/components/header.css" rel="stylesheet">
+  <link href="./styles/components/hero.css" rel="stylesheet">
+  <link href="./styles/components/mobile-nav.css" rel="stylesheet">
+  <link href="./styles/components/work.css" rel="stylesheet">
+  <link href="./styles/utils.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
         </li>
-          <li>
-            <a class="mobile-nav__btn btn" href="">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- End of Mobile Navigation-->
-    <main>
-      <section class="hero container">
-        <img class="hero__img" src="./public/aboutHero.png" alt="Profile Picture" />
-        <!-- add image/profile pic of self!!! -->
-        <h2 class="hero__subtitle">Hi, I'm Adi 👋</h2>
-        <h1 class="hero__title">I am a... </h1>
-        <!-- add <br> aka line break tag if needed -->
-        <p class="hero__description"><i>Its Nice to Meet You!</i></p>
-        <!-- add <strong> tags around specific parts of description if needed -->
-        <a class="hero__btn btn" href="#">Reach Out</a>
-      </section>
-      <section id="about" class="about container section">
-        <div class="about__content">
-          <h2 class="about__title">About</h2>
-          <p class="about__description">
-            I’m a 14-year-old sophomore at, West-Windsor Plainsboro, High School
-            North. I love learning new things, and I’m especially interested in
-            subjects like Math and Computer Science.
-          </p>
-          <!-- use <strong> tag wherever needed in the paragraphs -->
-          <p class="about__description">
-            Outside of school, I like to spend time playing tennis, working with
-            my <a href="https://alpinerobotics25710.github.io/AlpineRoboticsWebsite/">robotics team</a> (and yes I built that website as well), and spending time with my family. I
-            also enjoy hanging out with my friends and exploring new interests,
-            whether it’s music, gaming, or trying new things.
-          </p>
-          <p class="about__description">
-            In the future, I hope to pursue a career in Computer
-            Science(Software Development, AI/ML, Quantum Computing). I’m excited
-            to keep growing and discovering more about myself and the world!
-          </p>
-          <hr class="about__hr" />
-          <h3 class="about__subtitle">Technologies/Skills</h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">HTML</li>
-              <li class="about__list">Javascript (ES6+)</li>
-              <li class="about__list">CSS</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">Java</li>
-              <li class="about__list">Python</li>
-              <li class="about__list">Qiskit</li>
-            </ul>
-          </div>
-        </div>
-        <div class="about__img-wrapper">
-          <img class="about__img lazy loading" src="https://via.placeholder.com/720" data-src="./public/about.png" alt="profile picture" />
-          <!-- TODO: add profile picture to public folder ASAP -->
-        </div>
-      </section>
-      <section id="featured" class="featured container section">
-        <h3 class="featured__subtitle">Featured Work</h3>
-        <!-- subtitle -->
-        <div class="featured__wrapper">
-          <h2 class="featured__title">EcoTrack:</h2>
-          <a
-            class="featured__link"
-            href="https://devpost.com/software/ecotrack-take-the-next-step-to-leave-less-behind"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
+        <li>
+          <a class="header__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
-                fill-rule="evenodd"
-                d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037.75.75 0 0 1-.646 1.353 5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353 5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037.75.75 0 0 1-.354-1Z"
-                clip-rule="evenodd"
-              />
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
             </svg>
-          </a>
-        </div>
-        Take the Next Step, to Leave Less Behind
-        <p class="featured__description">
-          Introducing EcoTrack: your family's eco-friendly assistant! 🌱 Our
-          platform helps you securely manage and predict your carbon footprint
-          by analyzing everything from energy usage to transportation habits.
-          Think of it as having a personal eco-coach cheering you on—without the
-          intimidating gym memberships!
-          <br /><br />
-          Imagine this: you’re chilling at home when EcoTrack nudges you about
-          your energy usage spiking! 📈 You check the dashboard, which reveals
-          which appliances are guzzling power like they’re at an all-you-can-eat
-          buffet. With just a few tweaks, you can get back to enjoying your
-          evening, knowing you’ll save money and help the planet!
-          <br /><br />
-          I created this together with my friends Rajveer Dharkar and Ishaan Cherukuri during the 10th Aniversary of
-          the 24-hour University of Maryland(Baltimore County)
-          Hackathon(HackUMBC 2024)!
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" href="/portfolio-website/public/Adi%20Varshney%20-%20Resume.pdf">Resume</a>
+          <!-- add link to resume in href!!! -->
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="/portfolio-website/public/Adi%20Varshney%20-%20Resume.pdf">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile Navigation-->
+  <main>
+    <section class="hero container">
+      <img class="hero__img" src="./public/aboutHero.png" alt="Profile Picture" />
+      <!-- add image/profile pic of self!!! -->
+      <h2 class="hero__subtitle">Hi, I'm Adi 👋</h2>
+      <h1 class="hero__title">
+        <span id="typewriter"></span><span class="cursor"></span>
+      </h1>
+      <!-- add <br> aka line break tag if needed -->
+      <p class="hero__description"><i>Its Nice to Meet You!</i></p>
+      <!-- add <strong> tags around specific parts of description if needed -->
+      <a class="hero__btn btn" href="linkedin.com/in/adi-varshney2009">Reach Out</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">
+          I’m a 15-year-old junior at, West-Windsor Plainsboro, High School
+          North. I love learning new things, and I’m especially interested in
+          subjects like Math and Computer Science.
         </p>
-        <div class="featured__info-container">
-          <div>
-            <h3 class="featured__label">Tech Stack</h3>
-            <ul class="featured__tech-stack">
-              <li class="featured__info">HTML</li>
-              <li class="featured__info">CSS</li>
-              <li class="featured__info">tailwindcss</li>
-              <li class="featured__info">Javascript ES6+</li>
-              <li class="featured__info">Chart.js</li>
-              <li class="featured__info">Python(Flask framework)</li>
-              <li class="featured__info">NumPy</li>
-              <li class="featured__info">Pandas</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="featured__label">Project Type</h3>
-            <p class="featured__info">Fullstack-JamStack</p>
-          </div>
-          <div>
-            <h3 class="featured__label">Timeline</h3>
-            <p class="featured__info">August 2024</p>
-          </div>
-        </div>
-        <div class="featured__img-container">
-          <div class="featured__img-wrapper">
-            <img
-              src="https://via.placeholder.com/1280x974"
-              data-src="./public/EcoTrackMainPage.png"
-              alt="EcoTrack Website Home"
-              class="round-img-borders lazy loading"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              src="https://via.placeholder.com/1280x974"
-              data-src="./public/EcoTrackRegistration.png"
-              alt="EcoTrack Website Registration"
-              class="round-img-borders lazy loading"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              src="https://via.placeholder.com/1280x974"
-              data-src="./public/EcoTrackDashboard.png"
-              alt="EcoTrack Website Personal-Dashboard"
-              class="round-img-borders lazy loading"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              src="https://via.placeholder.com/1280x974"
-              data-src="./public/EcoTrackCarbonOffset.png"
-              alt="EcoTrack Website Carbon Offset Page"
-              class="round-img-borders lazy loading"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="work container section" id="#Work">
-        <h2 class="work__title">Projects</h2>
-        <p class="work__description">
-          My passion for computer science motivates me to explore different
-          areas of technology and continually improve my skills. I enjoy taking
-          on projects that challenge me to think critically and apply what I’ve
-          learned across various fields.
+        <!-- use <strong> tag wherever needed in the paragraphs -->
+        <p class="about__description">
+          Outside of school, I like to spend time playing tennis, working with
+          my <a href="https://alpinerobotics25710.github.io/AlpineRoboticsWebsite/">robotics team</a> (fun fact: I
+          helped built that website too and feel free to check it out!!), and spending time with my family. I
+          also enjoy hanging out with my friends and exploring new interests,
+          whether it’s music, gaming, or trying new things.
         </p>
-        <p class="work__description">
-          These projects allow me to showcase my progress and gain experience in
-          different aspects of computer science. Whether it's web development or
-          other areas, each project helps me grow and brings me closer to my
-          goal of mastering new technologies and concepts.
+        <p class="about__description">
+          In the future, I hope to pursue a career in Computer
+          Science(Software Development, AI/ML, Quantum Computing). I’m excited
+          to keep growing and discovering more about myself and the world!
         </p>
-        <div class="work__container">
-          <!-- Project 1 -->
-          <h3 class="work__project-title">Portfolio Website</h3>
-          <div class="work__img-wrapper work__image1">
-            <img
-              src="https://via.placeholder.com/520x520"
-              class="work__project-img lazy loading"
-              data-src="./public/PortfolioWebsiteProjectThumbnail.png"
-              alt="Personal Portfolio Website"
-            />
-          </div>
-          <div class="work__project work__content1">
-            <h3 class="work__project-subtitle">Portfolio Website</h3>
-            <p class="work__project-description1">
-              I built this personal portfolio website to practice my skills in
-              HTML, CSS, and JavaScript while showcasing my progress in computer
-              science. This project helped me learn more about front-end web
-              development, including responsive design, layout techniques, and
-              user experience.
-            </p>
-            <p class="work__project-description2">
-              Creating the site allowed me to apply what I've learned and
-              explore new tools and methods to improve my design and coding
-              abilities. I wanted a space to not only track my growth but also
-              share my work with others as I continue developing new projects.
-            </p>
-            <a class="btn work__project-btn" href="#">Website</a>
-          </div>
-          <!-- Project 2 -->
-          <h3 class="work__project-title">EcoTrack</h3>
-          <div class="work__img-wrapper work__image2">
-            <img
-              src="https://via.placeholder.com/960x960"
-              class="work__project-img lazy loading"
-              data-src="./public/EcoTrackProjectThumbnail.png"
-              alt="EcoTrack Website"
-            />
-          </div>
-          <div class="work__project work__content2">
-            <h3 class="work__project-subtitle">EcoTrack</h3>
-            <p class="work__project-description1">
-              EcoTrack is a web app I developed to calculate carbon footprints
-              and raise awareness about environmental impact. While building it,
-              I enhanced my understanding of JavaScript, APIs, and data
-              handling, which were essential for creating the interactive
-              features and tracking results.
-            </p>
-            <p class="work__project-description2">
-              This project allowed me to dive deeper into problem-solving and
-              user interface design, making the app intuitive and easy to use. I
-              created EcoTrack to combine my passion for coding with a cause I
-              care about, helping users understand their carbon footprint and
-              make more eco-conscious choices.
-            </p>
-            <a
-              class="btn work__project-btn"
-              href="https://devpost.com/software/ecotrack-take-the-next-step-to-leave-less-behind"
-              >DevPost</a
-            >
-          </div>
+        <hr class="about__hr" />
+        <h3 class="about__subtitle">Technologies/Skills</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">HTML</li>
+            <li class="about__list">Javascript (ES6+)</li>
+            <li class="about__list">CSS</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">Java</li>
+            <li class="about__list">Python</li>
+            <li class="about__list">Qiskit</li>
+          </ul>
         </div>
-      </section>
-      <section id="contact" class="contact container section">
-        <h2 class="contact__title">Get in Contact!</h2>
-        <p class="contact__description">
-          Feel free to reach out if you're starting a new project, have
-          questions, or just want to connect. My inbox is always open, and I’ll
-          get back to you as soon as possible. I look forward to hearing from
-          you!
-        </p>
-        <a
-          class="contact__btn btn"
-          href="mailto:adi.varshney09@gmail.com"
-          target="_blank"
-          >Reach Out</a
-        >
-      </section>
-    </main>
-    <footer class="footer container section">
-      <h3 class="footer__title">~Adi Varshney~</h3>
-    </footer>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading" src="https://via.placeholder.com/720" data-src="./public/about.jpg"
+          alt="profile picture" />
+        <!-- TODO: add profile picture to public folder ASAP -->
+      </div>
+    </section>
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">Featured Work</h3>
+      <!-- subtitle -->
+      <div class="featured__wrapper">
+        <h2 class="featured__title">EcoTrack:</h2>
+        <a class="featured__link" href="https://devpost.com/software/ecotrack-take-the-next-step-to-leave-less-behind">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037.75.75 0 0 1-.646 1.353 5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353 5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037.75.75 0 0 1-.354-1Z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      Take the Next Step, to Leave Less Behind
+      <p class="featured__description">
+        Introducing EcoTrack: your family's eco-friendly assistant! 🌱 Our
+        platform helps you securely manage and predict your carbon footprint
+        by analyzing everything from energy usage to transportation habits.
+        Think of it as having a personal eco-coach cheering you on—without the
+        intimidating gym memberships!
+        <br /><br />
+        Imagine this: you’re chilling at home when EcoTrack nudges you about
+        your energy usage spiking! 📈 You check the dashboard, which reveals
+        which appliances are guzzling power like they’re at an all-you-can-eat
+        buffet. With just a few tweaks, you can get back to enjoying your
+        evening, knowing you’ll save money and help the planet!
+        <br /><br />
+        I created this together with my friends Rajveer Dharkar and Ishaan Cherukuri during the 10th Aniversary of
+        the 24-hour University of Maryland(Baltimore County)
+        Hackathon(HackUMBC 2024)!
+      </p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tech Stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">HTML</li>
+            <li class="featured__info">CSS</li>
+            <li class="featured__info">tailwindcss</li>
+            <li class="featured__info">Javascript ES6+</li>
+            <li class="featured__info">Chart.js</li>
+            <li class="featured__info">Python(Flask framework)</li>
+            <li class="featured__info">NumPy</li>
+            <li class="featured__info">Pandas</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">Project Type</h3>
+          <p class="featured__info">Fullstack-JamStack</p>
+        </div>
+        <div>
+          <h3 class="featured__label">Timeline</h3>
+          <p class="featured__info">August 2024</p>
+        </div>
+      </div>
+      <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+          <img src="https://via.placeholder.com/1280x974" data-src="./public/EcoTrackMainPage.png"
+            alt="EcoTrack Website Home" class="round-img-borders lazy loading" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="https://via.placeholder.com/1280x974" data-src="./public/EcoTrackRegistration.png"
+            alt="EcoTrack Website Registration" class="round-img-borders lazy loading" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="https://via.placeholder.com/1280x974" data-src="./public/EcoTrackDashboard.png"
+            alt="EcoTrack Website Personal-Dashboard" class="round-img-borders lazy loading" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="https://via.placeholder.com/1280x974" data-src="./public/EcoTrackCarbonOffset.png"
+            alt="EcoTrack Website Carbon Offset Page" class="round-img-borders lazy loading" />
+        </div>
+      </div>
+    </section>
+    <section class="work container section" id="#Work">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__description">
+        My passion for computer science motivates me to explore different
+        areas of technology and continually improve my skills. I enjoy taking
+        on projects that challenge me to think critically and apply what I’ve
+        learned across various fields.
+      </p>
+      <p class="work__description">
+        These projects allow me to showcase my progress and gain experience in
+        different aspects of computer science. Whether it's web development or
+        other areas, each project helps me grow and brings me closer to my
+        goal of mastering new technologies and concepts.
+      </p>
+      <div class="work__container">
+        <!-- Project 1 -->
+        <h3 class="work__project-title">Portfolio Website</h3>
+        <div class="work__img-wrapper work__image1">
+          <img src="https://via.placeholder.com/520x520" class="work__project-img lazy loading"
+            data-src="./public/PortfolioWebsiteProjectThumbnail.png" alt="Personal Portfolio Website" />
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__project-subtitle">Portfolio Website</h3>
+          <p class="work__project-description1">
+            I built this personal portfolio website to practice my skills in
+            HTML, CSS, and JavaScript while showcasing my progress in computer
+            science. This project helped me learn more about front-end web
+            development, including responsive design, layout techniques, and
+            user experience.
+          </p>
+          <p class="work__project-description2">
+            Creating the site allowed me to apply what I've learned and
+            explore new tools and methods to improve my design and coding
+            abilities. I wanted a space to not only track my growth but also
+            share my work with others as I continue developing new projects.
+          </p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+        <!-- Project 2 -->
+        <h3 class="work__project-title">EcoTrack</h3>
+        <div class="work__img-wrapper work__image2">
+          <img src="https://via.placeholder.com/960x960" class="work__project-img lazy loading"
+            data-src="./public/EcoTrackProjectThumbnail.png" alt="EcoTrack Website" />
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project-subtitle">EcoTrack</h3>
+          <p class="work__project-description1">
+            EcoTrack is a web app I developed to calculate carbon footprints
+            and raise awareness about environmental impact. While building it,
+            I enhanced my understanding of JavaScript, APIs, and data
+            handling, which were essential for creating the interactive
+            features and tracking results.
+          </p>
+          <p class="work__project-description2">
+            This project allowed me to dive deeper into problem-solving and
+            user interface design, making the app intuitive and easy to use. I
+            created EcoTrack to combine my passion for coding with a cause I
+            care about, helping users understand their carbon footprint and
+            make more eco-conscious choices.
+          </p>
+          <a class="btn work__project-btn"
+            href="https://devpost.com/software/ecotrack-take-the-next-step-to-leave-less-behind">DevPost</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact container section">
+      <h2 class="contact__title">Get in Contact!</h2>
+      <p class="contact__description">
+        Feel free to reach out if you're starting a new project, have
+        questions, or just want to connect. My inbox is always open, and I’ll
+        get back to you as soon as possible. I look forward to hearing from
+        you!
+      </p>
+      <a class="contact__btn btn" href="mailto:adi.varshney09@gmail.com" target="_blank">Reach Out</a>
+    </section>
+  </main>
+  <footer class="footer container section">
+    <h3 class="footer__title">~Adi Varshney~</h3>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
 </html>
