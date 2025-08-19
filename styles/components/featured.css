@@ -68,7 +68,7 @@
 
 .featured__img-wrapper::after {
     content: '';
-    background-color: rgba(79, 70, 229, 0.4);
+    background-color: rgba(79, 70, 229, 0.3);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -79,16 +79,17 @@
 }
 
 .featured__img-wrapper:hover::after {
-    background-color: rgba(79, 70, 229, 0.1);
+    background-color: rgba(79, 70, 229, 0.05);
 }
 
 .round-img-borders, .featured__img-wrapper::after {
     border-radius: 15px;
-    border-width: 20px;
-    border-color: var(--clr-slate600);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--clr-success);
 }
 
-.featured__img-container {
+    .featured__img-container {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
