@@ -103,10 +103,11 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         'image5 content5'
-        'content4 image4'
-        'image3 content3'
-        'content2 image2'
-        'image1 content1';
+        'content6 image6'
+        'image4 content4'
+        'content3 image3'
+        'image2 content2'
+        'content1 image1';
         place-items: center;
     }
 
@@ -144,6 +145,14 @@
 
     .work__content5 {
         grid-area: content5;
+    }
+
+    .work__image6 {
+        grid-area: image6;
+    }
+
+    .work__content6 {
+        grid-area: content6;
     }
 
     .work__content4 {
