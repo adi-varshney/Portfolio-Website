@@ -1,3 +1,5 @@
-export default {
-    base: '/portfolio-website/',
-  };
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  base: '/',
+});

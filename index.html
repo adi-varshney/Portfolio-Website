@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/public/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Adi Varshney's Portfolio</title>
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
@@ -46,7 +46,7 @@
         </li>
         <li class="header__line"></li>
         <li>
-          <button id="theme-toggle" class="header__sun">
+          <button class="header__sun theme-toggle" type="button" aria-label="Toggle color theme">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
@@ -54,11 +54,10 @@
           </button>
         </li>
         <li>
-          <a class="header__resume btn" href="/public/Adi%20Varshney%20-%20Resume.pdf">Resume</a>
-          <!-- add link to resume in href!!! -->
+          <a class="header__resume btn" href="/Adi%20Varshney%20-%20Resume.pdf">Resume</a>
         </li>
       </ul>
-      <button class="header__bars">
+      <button class="header__bars" type="button" aria-label="Open menu" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill-rule="evenodd"
             d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
@@ -82,7 +81,7 @@
         </li>
         <li class="mobile-nav__link-line"></li>
         <li>
-          <button id="theme-toggle" class="mobile-nav__sun">
+          <button class="mobile-nav__sun theme-toggle" type="button" aria-label="Toggle color theme">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
@@ -90,7 +89,7 @@
           </button>
         </li>
         <li>
-          <a class="mobile-nav__btn btn" href="/public/Adi%20Varshney%20-%20Resume.pdf">Resume</a>
+          <a class="mobile-nav__btn btn" href="/Adi%20Varshney%20-%20Resume.pdf">Resume</a>
         </li>
       </ul>
     </nav>
@@ -98,37 +97,30 @@
   <!-- End of Mobile Navigation-->
   <main>
     <section class="hero container">
-      <img class="hero__img" src="./public/Selfies/aboutHero.png" alt="Profile Picture" />
-      <!-- add image/profile pic of self!!! -->
+      <img class="hero__img" src="/Selfies/aboutHero.png" alt="Adi Varshney" />
       <h2 class="hero__subtitle">Hi, I'm Adi 👋</h2>
       <h1 class="hero__title">
         <span id="typewriter"></span><span class="cursor"></span>
       </h1>
-      <!-- add <br> aka line break tag if needed -->
-      <p class="hero__description"><i>Its Nice to Meet You!</i></p>
-      <!-- add <strong> tags around specific parts of description if needed -->
+      <p class="hero__description"><i>It's nice to meet you!</i></p>
       <a class="hero__btn btn" href="https://linkedin.com/in/adi-varshney09">Reach Out</a>
     </section>
     <section id="about" class="about container section">
       <div class="about__content">
         <h2 class="about__title">About</h2>
         <p class="about__description">
-          I’m a 15-year-old junior at, West-Windsor Plainsboro, High School
-          North. I love learning new things, and I’m especially interested in
-          subjects like Math and Computer Science.
+          I’m 16 and a student at West Windsor-Plainsboro High School North.
+          I love learning new things, especially math and computer science.
         </p>
-        <!-- use <strong> tag wherever needed in the paragraphs -->
         <p class="about__description">
           Outside of school, I like to spend time playing tennis, working with
-          my <a href="https://alpinerobotics25710.github.io/AlpineRoboticsWebsite/">robotics team</a> (fun fact: I
-          helped built that website too and feel free to check it out!!), and spending time with my family. I
-          also enjoy hanging out with my friends and exploring new interests,
-          whether it’s music, gaming, or trying new things.
+          my <a href="https://alpinerobotics25710.github.io/AlpineRoboticsWebsite/">robotics team</a>
+          (I helped build its website), and spending time with family and friends.
+          I also enjoy music, gaming, and exploring new interests.
         </p>
         <p class="about__description">
-          In the future, I hope to pursue a career in Computer
-          Science(Software Development, AI/ML, Quantum Computing). I’m excited
-          to keep growing and discovering more about myself and the world!
+          I’m interested in software development, AI, and quantum computing.
+          I’m excited to keep building things and learning along the way.
         </p>
         <hr class="about__hr" />
         <h3 class="about__subtitle">Technologies/Skills</h3>
@@ -151,9 +143,7 @@
         </div>
       </div>
       <div class="about__img-wrapper">
-        <img class="about__img lazy loading" src="https://via.placeholder.com/720" data-src="./public/Selfies/about.jpg"
-          alt="profile picture" />
-        <!-- TODO: add profile picture to public folder ASAP -->
+        <img class="about__img" src="/Selfies/about.png" loading="lazy" alt="Adi Varshney in a suit" />
       </div>
     </section>
     <section id="featured" class="featured container section">
@@ -169,44 +159,30 @@
           </svg>
         </a>
       </div>
-      Democratizing Financial Literacy for All Ages
       <p class="featured__description">
-        The Financial Ledger is a comprehensive financial literacy platform
-        designed to democratize access to institutional-grade market analysis and financial education.
-        We bridge the gap between complex Wall Street research and everyday investors
-        by translating sophisticated financial concepts into accessible,
-        actionable insights for users of all experience levels.
+        The Financial Ledger is a free finance publication with market research,
+        explainers, and perspectives for readers who want clear analysis without jargon.
         <br /><br />
-        Our platform serves both seasoned professionals seeking deeper market intelligence
-        and newcomers looking to build their financial knowledge foundation.
-        Through daily market briefs, in-depth analysis articles, and educational content,
-        we empower users to make informed investment decisions regardless of their background or experience level.
-        <br /><br />
-        I built this website for The Financial Ledger, an initiative co-founded by
-        Aarav Singh and me with the goal of making advanced financial analysis accessible to
-        retail investors and portfolio managers who seek deeper insights beyond surface-level market commentary.
+        I co-founded the publication with Aarav Singh and built its website.
+        The current platform organizes research, educational articles, and interviews
+        into a responsive reading experience.
+        To date, we’ve published 35 issues and two podcast episodes, shared 30 social posts,
+        reached more than 15,000 views, and grown to 150 Instagram followers.
       </p>
       <div class="featured__info-container">
         <div>
           <h3 class="featured__label">Tech Stack</h3>
           <ul class="featured__tech-stack">
-            <li class="featured__info">React 18</li>
+            <li class="featured__info">Next.js</li>
             <li class="featured__info">TypeScript</li>
             <li class="featured__info">Tailwind CSS</li>
-            <li class="featured__info">Supabase (Backend/Database)</li>
-            <li class="featured__info">Framer Motion</li>
-            <li class="featured__info">React Query</li>
-            <li class="featured__info">React Router</li>
-            <li class="featured__info">React Hook Form</li>
-            <li class="featured__info">Vite</li>
-            <li class="featured__info">Radix UI Components</li>
-            <li class="featured__info">Recharts (Data Visualization)</li>
-            <li class="featured__info">Quill (Rich Text Editor)</li>
+            <li class="featured__info">Supabase</li>
+            <li class="featured__info">Cloudflare Workers</li>
           </ul>
         </div>
         <div>
           <h3 class="featured__label">Project Type</h3>
-          <p class="featured__info">Fullstack-JamStack</p>
+          <p class="featured__info">Full-stack web platform</p>
         </div>
         <div>
           <h3 class="featured__label">Timeline</h3>
@@ -215,24 +191,24 @@
       </div>
       <div class="featured__img-container">
         <div class="featured__img-wrapper">
-          <img src="https://via.placeholder.com/1280x974" data-src="./public/Featured-Work/Homepage.png"
-            alt="EcoTrack Website Home" class="round-img-borders lazy loading" />
+          <img src="/Featured-Work/Homepage.png" loading="lazy"
+            alt="The Financial Ledger homepage" class="round-img-borders" />
         </div>
         <div class="featured__img-wrapper">
-          <img src="https://via.placeholder.com/1280x974" data-src="./public/Featured-Work/Image1.png"
-            alt="EcoTrack Website Registration" class="round-img-borders lazy loading" />
+          <img src="/Featured-Work/Image1.png" loading="lazy"
+            alt="The Financial Ledger research page" class="round-img-borders" />
         </div>
         <div class="featured__img-wrapper">
-          <img src="https://via.placeholder.com/1280x974" data-src="./public/Featured-Work/Image2.png"
-            alt="EcoTrack Website Personal-Dashboard" class="round-img-borders lazy loading" />
+          <img src="/Featured-Work/Image2.png" loading="lazy"
+            alt="The Financial Ledger explainers page" class="round-img-borders" />
         </div>
         <div class="featured__img-wrapper">
-          <img src="https://via.placeholder.com/1280x974" data-src="./public/Featured-Work/Image3.png"
-            alt="EcoTrack Website Carbon Offset Page" class="round-img-borders lazy loading" />
+          <img src="/Featured-Work/Image3.png" loading="lazy"
+            alt="The Financial Ledger team page" class="round-img-borders" />
         </div>
       </div>
     </section>
-    <section class="work container section" id="#Work">
+    <section class="work container section" id="work">
       <h2 class="work__title">Projects</h2>
       <p class="work__description">
         My passion for computer science motivates me to explore different
@@ -250,8 +226,8 @@
         <!-- Project 1 -->
         <h3 class="work__project-title">Portfolio Website</h3>
         <div class="work__img-wrapper work__image1">
-          <img src="https://via.placeholder.com/520x520" class="work__project-img lazy loading"
-            data-src="./public/Project-Thumbnails/PortfolioWebsite.png" alt="Personal Portfolio Website" />
+          <img src="/Project-Thumbnails/PortfolioWebsite.png" class="work__project-img" loading="lazy"
+            alt="Personal portfolio website" />
         </div>
         <div class="work__project work__content1">
           <h3 class="work__project-subtitle">Portfolio Website</h3>
@@ -268,14 +244,14 @@
             abilities. I wanted a space to not only track my growth but also
             share my work with others as I continue developing new projects.
           </p>
-          <a class="btn work__project-btn" href="#">Website</a>
+          <a class="btn work__project-btn" href="/">Website</a>
         </div>
 
         <!-- Project 2 -->
         <h3 class="work__project-title">EcoTrack</h3>
         <div class="work__img-wrapper work__image2">
-          <img src="https://via.placeholder.com/960x960" class="work__project-img lazy loading"
-            data-src="./public/Project-Thumbnails/EcoTrack.png" alt="EcoTrack Website" />
+          <img src="/Project-Thumbnails/EcoTrack.png" class="work__project-img" loading="lazy"
+            alt="EcoTrack app" />
         </div>
         <div class="work__project work__content2">
           <h3 class="work__project-subtitle">EcoTrack</h3>
@@ -300,8 +276,8 @@
         <!-- Project 3 -->
         <h3 class="work__project-title">Alpine Robotics Team Website</h3>
         <div class="work__img-wrapper work__image3">
-          <img src="https://via.placeholder.com/960x960" class="work__project-img lazy loading"
-            data-src="./public/Project-Thumbnails/AlpineRoboticsWebsite.png" alt="Alpine Robotics Team Website" />
+          <img src="/Project-Thumbnails/AlpineRoboticsWebsite.png" class="work__project-img" loading="lazy"
+            alt="Alpine Robotics team website homepage" />
         </div>
         <div class="work__project work__content3">
           <h3 class="work__project-subtitle">Alpine Robotics Website</h3>
@@ -326,8 +302,8 @@
         <!-- Project 4 -->
         <h3 class="work__project-title">OpenVault</h3>
         <div class="work__img-wrapper work__image4">
-          <img src="https://via.placeholder.com/960x960" class="work__project-img lazy loading"
-            data-src="./public/Project-Thumbnails/OpenVault.png" alt="OpenVault Website" />
+          <img src="/Project-Thumbnails/OpenVault.png" class="work__project-img" loading="lazy"
+            alt="OpenVault website homepage" />
         </div>
         <div class="work__project work__content4">
           <h3 class="work__project-subtitle">OpenVault</h3>
@@ -350,28 +326,21 @@
         <!-- Project 5 -->
         <h3 class="work__project-title">The Financial Ledger</h3>
         <div class="work__img-wrapper work__image5">
-          <img src="https://via.placeholder.com/960x960" class="work__project-img lazy loading"
-            data-src="./public/Project-Thumbnails/TheFinancialLedger.png" alt="The Financial Ledger Website" />
+          <img src="/Project-Thumbnails/TheFinancialLedger.png" class="work__project-img" loading="lazy"
+            alt="The Financial Ledger website homepage" />
         </div>
         <div class="work__project work__content5">
           <h3 class="work__project-subtitle">The Financial Ledger</h3>
           <p class="work__project-description1">
-            The Financial Ledger is a modern finance platform designed to deliver
-            deep market analysis, institutional-grade research, and real-time insights for professionals navigating
-            today’s complex financial world.
-            The project focuses on clarity and accessibility, making high-level financial intelligence approachable
-            through a sleek, responsive design.
+            The Financial Ledger publishes market analysis, explainers, and interviews.
+            Its current site is designed to make finance writing clear and easy to explore.
+            So far, we’ve published 35 issues, two podcast episodes, and 30 social posts,
+            reaching more than 15,000 views and 150 Instagram followers.
           </p>
           <p class="work__project-description2">
-            In this project, I took the lead on both the technical and creative sides, building the site from scratch
-            using
-            vibe coding to capture the exact aesthetic and functionality I envisioned.
-            I implemented features for smooth navigation, responsive layouts, and dynamic UI elements to ensure an
-            engaging user experience.
-            Beyond design, I also worked on structuring the content flow to highlight market intelligence and daily
-            briefs,
-            aligning the platform’s visuals with its mission of delivering sophisticated, actionable financial
-            knowledge.
+            I built the site and helped shape its visual direction. The current version uses
+            Next.js, Supabase, and Cloudflare to support a responsive publication with
+            organized research, educational content, and a searchable archive.
           </p>
           <a class="btn work__project-btn" href="https://www.thefinanceledger.org">Website</a>
         </div>

@@ -56,7 +56,7 @@
 /* extra small viewport */
 @media (min-width: 475px) {
     .about {
-        gap: 1.5 rem;
+        gap: 1.5rem;
     }
     
     .about__content {

@@ -138,6 +138,14 @@
         grid-area: image4;
     }
 
+    .work__image5 {
+        grid-area: image5;
+    }
+
+    .work__content5 {
+        grid-area: content5;
+    }
+
     .work__content4 {
         grid-area: content4;
     }

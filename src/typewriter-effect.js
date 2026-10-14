@@ -6,11 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
     "Computer Scientist",
     "Robotics Programmer",
     "Quantum Computing Enthusiast",
+    "Finance Tech Builder",
+    "Creative Problem Solver",
   ];
 
   // ====== ELEMENTS ======
   const el = document.getElementById("typewriter");
   const title = document.querySelector(".hero__title");
+  if (!el || !title) return;
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    el.textContent = phrases[0];
+    return;
+  }
 
   // ====== CONFIG (CSS variable-based sizing) ======
   const VAR_MIN = "--size-2xl"; // ~1.5rem in your scale
